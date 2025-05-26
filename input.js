@@ -32,6 +32,18 @@ const handleUserInput = function (key) {
   if (key === "d") {
     connection.write("Move: right");
   }
+
+  // Say messages
+  if (key === "1") {
+    connection.write("Say: SUUUUUUUUU");
+  }
+  if (key === "2") {
+    connection.write("Say: HISSSSSSSS");
+  }
+  if (key === "3") {
+    connection.write("Say: no u ded");
+  }
+
 };
 
 module.exports = {
