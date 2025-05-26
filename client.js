@@ -13,6 +13,9 @@ const connect = function () {
   // Event: successful connection
   conn.on("connect", () => {
     console.log("Successfully connected to Play server!");
+    
+    // send name to server
+    conn.write("Name: ACE"); // Replace 'ACE' with your preferred 3-char ID
   });
 
   // Event: incoming data from server
@@ -22,8 +25,5 @@ const connect = function () {
 
   return conn;
 };
-
-console.log("Connecting ...");
-connect();
 
 module.exports = { connect };
