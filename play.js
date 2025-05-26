@@ -10,9 +10,9 @@ const game = new Game(new UserInterface(), new RemoteInterface())
 // Begin game
 game.start()
 
-const { connect } = require("./client.js");
+const { connect } = require("./client");
 const { setupInput } = require("./input");
 
-console.log("Connecting 1,2,3 ...");
-connect();
-setupInput();
+console.log("Connecting ...");
+const conn = connect();
+setupInput(conn);
