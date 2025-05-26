@@ -25,7 +25,7 @@ const connect = function () {
 
   // Event: successful connection
   conn.on("connect", () => {
-    console.log("Successfully connected to game server!");
+    console.log("Successfully connected to Play server!");
   });
 
   // Event: incoming data from server
