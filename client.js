@@ -14,8 +14,12 @@ const connect = function () {
   conn.on("connect", () => {
     console.log("Successfully connected to Play server!");
     
-    // send name to server
-    conn.write("Name: ACE"); // Replace 'ACE' with your preferred 3-char ID
+    // player name 3 character max
+    conn.write("Name: ACE");
+
+    // movement commands (commented out for cleanup)
+    // conn.write("Move: up");
+    
   });
 
   // Event: incoming data from server
