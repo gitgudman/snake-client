@@ -28,3 +28,4 @@ This project was not built from scratch. It was inspired and started from [snek]
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
+# snake-client
